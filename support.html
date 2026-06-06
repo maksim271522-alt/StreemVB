@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamVibe - Support</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/w2.css">
+    <link rel="stylesheet" href="style/support.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="logo">
+                <img src="/img/Vector (7).svg" alt="StreamVibe">
+                 <span class="logo__text">StreamVibe</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Home</a>
+                <a href="w3.html" class="nav__link">Movies & Shows</a>
+                <a href="support.html" class="nav__link">Support</a>
+                <a href="subscriptions.html" class="nav__link active">Subscriptions</a>
+            </nav>
+            <div class="header__actions">
+                <button class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="icon-btn"><i class="fa-solid fa-bell"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container support-layout">
+        
+        <div class="support-info">
+            <h1>Welcome to our support page!</h1>
+            <p>We're here to help you with any problems you may be having with our product.</p>
+            <div class="support-poster-collage">
+                <img src="/img/Container (12).png" alt="Movies Collage" class="collage-img">
+            </div>
+        </div>
+
+        <div class="support-form-container">
+            <form class="support-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" placeholder="Enter First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Enter Last Name" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your Email" required>
+                    </div>
+                    <div class="form-group">
+                         <label>Phone Number</label>
+                        <div class="phone-input-wrapper">
+                            <div class="country-select" tabindex="0">
+                                <img src="https://flagcdn.com/w20/in.png" alt="India Flag" width="20">
+                                <span class="country-code">+91</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <input type="tel" placeholder="+91 98765 43210" class="phone-input">
+                            <ul class="country-dropdown hidden" aria-label="Country selector">
+                                <li class="country-option" data-code="+91" data-placeholder="+91 98765 43210" data-flag="https://flagcdn.com/w20/in.png">
+                                    <img src="https://flagcdn.com/w20/in.png" alt="India Flag" width="20"> India
+                                </li>
+                                <li class="country-option" data-code="+1" data-placeholder="+1 415 555 2671" data-flag="https://flagcdn.com/w20/us.png">
+                                    <img src="https://flagcdn.com/w20/us.png" alt="USA Flag" width="20"> United States
+                                </li>
+                                <li class="country-option" data-code="+44" data-placeholder="+44 7911 123456" data-flag="https://flagcdn.com/w20/gb.png">
+                                    <img src="https://flagcdn.com/w20/gb.png" alt="UK Flag" width="20"> United Kingdom
+                                </li>
+                                <li class="country-option" data-code="+61" data-placeholder="+61 412 345 678" data-flag="https://flagcdn.com/w20/au.png">
+                                    <img src="https://flagcdn.com/w20/au.png" alt="Australia Flag" width="20"> Australia
+                                </li>
+                                <li class="country-option" data-code="+49" data-placeholder="+49 151 23456789" data-flag="https://flagcdn.com/w20/de.png">
+                                    <img src="https://flagcdn.com/w20/de.png" alt="Germany Flag" width="20"> Germany
+                                </li>
+                                <li class="country-option" data-code="+33" data-placeholder="+33 6 12 34 56 78" data-flag="https://flagcdn.com/w20/fr.png">
+                                    <img src="https://flagcdn.com/w20/fr.png" alt="France Flag" width="20"> France
+                                </li>
+                                <li class="country-option" data-code="+7" data-placeholder="+7 912 345 6789" data-flag="https://flagcdn.com/w20/ru.png">
+                                    <img src="https://flagcdn.com/w20/ru.png" alt="Russia Flag" width="20"> Russia
+                                </li>
+                                <li class="country-option" data-code="+81" data-placeholder="+81 90 1234 5678" data-flag="https://flagcdn.com/w20/jp.png">
+                                    <img src="https://flagcdn.com/w20/jp.png" alt="Japan Flag" width="20"> Japan
+                                </li>
+                                <li class="country-option" data-code="+86" data-placeholder="+86 138 0013 8000" data-flag="https://flagcdn.com/w20/cn.png">
+                                    <img src="https://flagcdn.com/w20/cn.png" alt="China Flag" width="20"> China
+                                </li>
+                                <li class="country-option" data-code="+55" data-placeholder="+55 11 91234 5678" data-flag="https://flagcdn.com/w20/br.png">
+                                    <img src="https://flagcdn.com/w20/br.png" alt="Brazil Flag" width="20"> Brazil
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Enter your Message" required></textarea>
+                </div>
+
+                <div class="form-footer">
+                    <label class="checkbox-container">
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                        I agree with Terms of Use and Privacy Policy
+                    </label>
+                    <button type="submit" class="btn btn--primary btn-submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <section class="container faq-section">
+        <div class="faq-header">
+            <div class="faq-header__text">
+                <h2>Frequently Asked Questions</h2>
+                <p>Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe.</p>
+            </div>
+            <button class="add-review-btn red-btn">Ask a Question</button>
+        </div>
+
+        <div class="faq-grid">
+            <div class="faq-item open">
+                <div class="faq-top">
+                    <span class="faq-num">01</span>
+                    <h3>What is StreamVibe?</h3>
+                    <button class="faq-toggle"><i class="fa-solid fa-minus"></i></button>
+                </div>
+                <div class="faq-answer">
+                    <p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-top">
+                    <span class="faq-num">05</span>
+                    <h3>How do I sign up for StreamVibe?</h3>
+                    <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-top">
+                    <span class="faq-num">02</span>
+                    <h3>How much does StreamVibe cost?</h3>
+                    <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-top">
+                    <span class="faq-num">06</span>
+                    <h3>What is the StreamVibe free trial?</h3>
+                    <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-top">
+                    <span class="faq-num">03</span>
+                    <h3>What content is available on StreamVibe?</h3>
+                    <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-top">
+                    <span class="faq-num">07</span>
+                    <h3>How do I contact StreamVibe customer support?</h3>
+                    <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-top">
+                    <span class="faq-num">04</span>
+                    <h3>How can I watch StreamVibe?</h3>
+                    <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-top">
+                    <span class="faq-num">08</span>
+                    <h3>What are the StreamVibe payment methods?</h3>
+                    <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container footer-spacing">
+        <div class="cta-banner">
+            <div class="cta-banner__content">
+                <h2>Start your free trial today!</h2>
+                <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+            </div>
+            <button class="btn btn--primary">Start a Free Trial</button>
+        </div>
+    </section>
+
+    <script src="script/support.js"></script>
+</body>
+</html>
