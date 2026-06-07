@@ -102,4 +102,39 @@ document.addEventListener('DOMContentLoaded', () => {
         supportForm.reset();
         alert('Спасибо! Ваше сообщение отправлено.');
     });
+
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach((faqItem) => {
+        const faqTop = faqItem.querySelector('.faq-top');
+        const toggleButton = faqItem.querySelector('.faq-toggle');
+
+        function setToggleState(isOpen) {
+            faqItem.classList.toggle('open', isOpen);
+            if (toggleButton) {
+                toggleButton.innerHTML = isOpen
+                    ? '<i class="fa-solid fa-minus"></i>'
+                    : '<i class="fa-solid fa-plus"></i>';
+            }
+        }
+
+        function toggleFaq(event) {
+            if (event.target.closest('.faq-toggle')) {
+                event.preventDefault();
+            }
+            setToggleState(!faqItem.classList.contains('open'));
+        }
+
+        if (toggleButton) {
+            toggleButton.addEventListener('click', toggleFaq);
+        }
+
+        if (faqTop) {
+            faqTop.addEventListener('click', (event) => {
+                if (!event.target.closest('.faq-toggle')) {
+                    toggleFaq(event);
+                }
+            });
+        }
+    });
 });

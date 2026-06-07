@@ -269,6 +269,11 @@
 .faq-answer {
     margin-top: 16px;
     padding-left: 60px;
+    display: none;
+}
+
+.faq-item.open .faq-answer {
+    display: block;
 }
 
 .faq-answer p {
